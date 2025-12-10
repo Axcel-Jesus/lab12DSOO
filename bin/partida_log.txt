@@ -1,0 +1,18 @@
+Territorio: Campo abierto
+
+Equipo 1 (activos): 3
+Equipo 2 (activos): 4
+
+
+Equipo 1
+caballero2X10 con vida: 3
+caballero3X4 con vida: 3
+arquero8X2 con vida: 2
+
+
+Equipo 2
+arquero1X4 con vida: 4
+lancero1X9 con vida: 2
+espadachin6X6 con vida: 3
+lancero10X10 con vida: 1
+

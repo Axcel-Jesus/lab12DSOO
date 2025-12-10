@@ -10,8 +10,6 @@ public class mapa {
     private String equipoDos;
     private JPanel Tablero;
     public mapa(){
-        
-
         Random rand = new Random();
         switch (rand.nextInt(5)) {
             case 0 :
@@ -118,6 +116,23 @@ public class mapa {
             }
         }
     }
+    public mapa(boolean vacio) {
+        if (vacio) {
+            mapa = new ArrayList<ArrayList<soldado>>();
+            for(int i = 0; i < 10; i++){
+                ArrayList<soldado> lista = new ArrayList<soldado>();
+                for(int j = 0; j < 10; j++){
+                    lista.add(new soldado()); // soldado vacío
+                }
+                mapa.add(lista);
+            }
+            this.territorio = "";
+            this.equipoUno = "";
+            this.equipoDos = "";
+            this.equipo1 = 0;
+            this.equipo2 = 0;
+        }
+    }
     public void setMapa(ArrayList<ArrayList<soldado>> mapa){
         this.mapa = mapa;
     }
@@ -209,5 +224,14 @@ public class mapa {
     }
     public void set(int fila, int columna, soldado soldado){
         mapa.get(fila).set(columna, soldado);
+    }
+    public void setTerritorio(String territorio) {
+        this.territorio = territorio;
+    }
+    public void setEquipo1(int equipo1) {
+        this.equipo1 = equipo1;
+    }
+    public void setEquipo2(int equipo2) {
+        this.equipo2 = equipo2;
     }
 }
