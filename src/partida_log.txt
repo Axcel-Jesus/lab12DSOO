@@ -1,18 +1,63 @@
-Territorio: Campo abierto
+Territorio: Desierto
 
-Equipo 1 (activos): 3
-Equipo 2 (activos): 4
+Equipo 1 (activos): 9
+Equipo 2 (activos): 5
 
 
 Equipo 1
-caballero2X10 con vida: 3
-caballero3X4 con vida: 3
-arquero8X2 con vida: 2
+caballero1X9 con vida: 4
+lancero3X2 con vida: 1
+arquero5X5 con vida: 4
+caballero5X7 con vida: 4
+caballero5X10 con vida: 2
+espadachin6X5 con vida: 1
+caballero6X9 con vida: 1
+caballero7X9 con vida: 1
+espadachin9X5 con vida: 4
 
 
 Equipo 2
-arquero1X4 con vida: 4
-lancero1X9 con vida: 2
-espadachin6X6 con vida: 3
-lancero10X10 con vida: 1
+caballero3X6 con vida: 2
+caballero3X8 con vida: 3
+arquero4X1 con vida: 2
+lancero4X2 con vida: 1
+lancero8X7 con vida: 4
 
+
+
+================== INFORMACIÓN DETALLADA ==================
+
+Equipo 1: 9
+
+Equipo 2: 5
+
+El soldado con mas vida del equipo 1 es: caballero1X9 con 4 de vida
+
+El soldado con mas vida del equipo 2 es: lancero8X7 con 4 de vida
+
+El equipo 1 tiene un promedio de vida de: 2.4444444444444446
+
+El equipo 2 tiene un promedio de vida de: 2.4
+
+
+Ranking de soldados del equipo 1
+1. caballero1X9 con vida: 4
+2. lancero3X2 con vida: 1
+3. arquero5X5 con vida: 4
+4. caballero5X7 con vida: 4
+5. caballero5X10 con vida: 2
+6. espadachin6X5 con vida: 1
+7. caballero6X9 con vida: 1
+8. caballero7X9 con vida: 1
+9. espadachin9X5 con vida: 4
+
+
+Ranking de soldados del equipo 2
+1. caballero3X6 con vida: 2
+2. caballero3X8 con vida: 3
+3. arquero4X1 con vida: 2
+4. lancero4X2 con vida: 1
+5. lancero8X7 con vida: 4
+
+Probabilidad de ganar: 64.0%del que ganará el equipo 1
+Probabilidad de ganar: 35.0%del que ganará el equipo 2

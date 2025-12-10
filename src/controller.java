@@ -108,6 +108,7 @@ public class controller {
             sb.append(VideoJuego3.MostrardatosEquipo(mapaActual,2)).append("\n");
             sb.append(VideoJuego3.RankingDeSoldadosDeEquipo(mapaActual,1)).append("\n");
             sb.append(VideoJuego3.RankingDeSoldadosDeEquipo(mapaActual,2)).append("\n");
+            sb.append(VideoJuego3.probabilidadVictoria(mapaActual)).append("\n");
 
             JTextArea infoAreaDialog = new JTextArea(sb.toString());
             infoAreaDialog.setEditable(false);
@@ -146,7 +147,7 @@ public class controller {
                 bw.write(view.getInfoArea().getText());
                 bw.write("\n\n");
                 bw.write("================== INFORMACIÓN DETALLADA ==================\n\n");
-                
+
                 // Información completa (como en "Sobre")
                 if (mapaActual != null) {
                     bw.write("Equipo 1: " + mapaActual.getEquipo1() + "\n\n");
@@ -157,6 +158,7 @@ public class controller {
                     bw.write(VideoJuego3.PromediodeVida(mapaActual, 2) + "\n\n");
                     bw.write(VideoJuego3.RankingDeSoldadosDeEquipo(mapaActual, 1) + "\n");
                     bw.write(VideoJuego3.RankingDeSoldadosDeEquipo(mapaActual, 2) + "\n");
+                    bw.write(VideoJuego3.probabilidadVictoria(mapaActual) + "\n");
                 }
             }
         }

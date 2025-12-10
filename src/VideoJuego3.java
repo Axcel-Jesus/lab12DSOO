@@ -93,7 +93,29 @@ public class VideoJuego3{
         }
         return mensaje;
     }
+    public static String probabilidadVictoria(mapa mapa){
+        int cantidadvida1 = 0;
+        int cantidadvida2 = 0;
+        for(int i = 0; i < 10; i++){
+            for(int j = 0; j < 10; j++){
+                if(mapa.get(i,j).isActivo() == true){
+                    if(mapa.get(i,j).getEquipo() == 1){
+                        cantidadvida1+=mapa.get(i,j).getVida();
+                    }else if(mapa.get(i,j).getEquipo() == 2){
+                        cantidadvida2+=mapa.get(i,j).getVida();
+                    }
+                }
+            }
+        }
+        double probabilidad1 = cantidadvida1*100/(cantidadvida1+cantidadvida2);
+        String texto="";
+        texto+="Probabilidad de ganar: " + probabilidad1 + "%"+"del que ganará el equipo 1";
+        double probabilidad2 = cantidadvida2*100/(cantidadvida1+cantidadvida2);
+        texto+="\nProbabilidad de ganar: " + probabilidad2 + "%"+"del que ganará el equipo 2";
+        return texto;
+    }
 }
+
 
 /*   public static int VerificarEspacio(mapa mapa, int fila, int columna, int movimiento){
         switch (movimiento) {
